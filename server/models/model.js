@@ -1,9 +1,8 @@
-//requerimos la libreria de mongoose
 const mongoose = require('mongoose');
 
 let Schema = mongoose.Schema;
 
-let quotesschema = new Schema({
+let citasSchema = new Schema({
 
     name: {
         type: String,
@@ -35,4 +34,4 @@ let quotesschema = new Schema({
     }
 });
 
-module.exports = mongoose.model('QuotesMoviles', quotesschema);
+module.exports = mongoose.model('Citas', citasSchema);
